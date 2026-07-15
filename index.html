@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Newtons Public School</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ============ PRELOADER ============ -->
+  <div id="preloader">
+    <div class="preloader-inner">
+      <div class="pl-logo">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+          <circle cx="24" cy="24" r="22" stroke="#18331F" stroke-width="1.5" />
+          <path d="M24 12C24 12 17 19 17 27C17 30.9 20.1 34 24 34C27.9 34 31 30.9 31 27C31 19 24 12 24 12Z"
+            fill="#18331F" />
+          <path d="M24 18V36M18 26C18 26 21 28 24 28C27 28 30 26 30 26" stroke="#D4AF37" stroke-width="1.5"
+            stroke-linecap="round" />
+        </svg>
+      </div>
+      <div class="pl-bar">
+        <div class="pl-fill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ NAVBAR ============ -->
+  <!-- ============ NAVBAR (SINGLE BAR) ============ -->
+  <nav id="navbar">
+    <div class="nav-main-bar">
+      <div class="nav-inner">
+        <a href="#home" class="nav-brand">
+          <div class="brand-icon">
+            <img src="logo.jpg" alt="Newtons Logo" style="height: 48px; width: auto; mix-blend-mode: multiply;" />
+          </div>
+          <div class="brand-text">
+            <span class="brand-title">NEWTONS</span>
+            <span class="brand-sub"> PUBLIC School</span>
+          </div>
+        </a>
+
+        <ul class="nav-menu" id="navMenu">
+          <li class="nav-fade" style="--i:1"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-fade" style="--i:2"><a href="#about" class="nav-link">About Us</a></li>
+          <li class="nav-fade" style="--i:3"><a href="#academics" class="nav-link">Academics</a></li>
+          <li class="nav-fade" style="--i:4"><a href="#campus" class="nav-link">Campus Life</a></li>
+          <li class="nav-fade" style="--i:5"><a href="#admissions" class="nav-link">Admissions</a></li>
+          <li class="nav-fade" style="--i:6"><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li class="nav-fade" style="--i:7"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions nav-fade" style="--i:8">
+          <a href="#admissions" class="btn-primary">Enquire Now</a>
+          <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============ HERO REDESIGN ============ -->
+  <section id="home" class="hero-redesign">
+    <!-- Full background image -->
+    <div class="hero-bg-img">
+      <img src="hero_campus.png" alt="Campus" />
+    </div>
+
+    <!-- Green curved overlay -->
+    <div class="hero-green-curve">
+      <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
+        <!-- Main green shape -->
+        <path d="M0,0 H450 Q850,500 500,1000 H0 Z" fill="var(--green-dark)" />
+        <!-- Yellow accent line -->
+        <path d="M455,0 Q855,500 505,1000" fill="none" stroke="var(--gold)" stroke-width="4" />
+      </svg>
+    </div>
+
+    <div class="container hero-content-wrapper">
+      <div class="hero-left-content reveal">
+        <div class="hero-badge">EST. SINCE 2004 · BENGALURU</div>
+        <h1 class="hero-title-main">Learn Today,<br /><span class="text-gold">Lead Tomorrow.</span></h1>
+        <p class="hero-subtitle">
+          Nurturing young minds with values, knowledge,<br />
+          and skills to create a better tomorrow.<br />
+          A modern approach to holistic education.
+        </p>
+        <a href="#about" class="btn-white-pill">
+          Explore More
+          <span class="btn-circle-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 18l6-6-6-6" />
+            </svg></span>
+        </a>
+
+        <!-- Inner stats strip -->
+        <div class="hero-inner-stats">
+          <div class="h-stat">
+            <div class="h-stat-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 6v6l4 2" />
+              </svg>
+            </div>
+            <div class="h-stat-text"><strong>20+</strong><span>Years of Excellence</span></div>
+          </div>
+          <div class="h-stat">
+            <div class="h-stat-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+            </div>
+            <div class="h-stat-text"><strong>500+</strong><span>Happy Students</span></div>
+          </div>
+          <div class="h-stat">
+            <div class="h-stat-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+            </div>
+            <div class="h-stat-text"><strong>50+</strong><span>Expert Educators</span></div>
+          </div>
+          <div class="h-stat">
+            <div class="h-stat-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                <polyline points="22 4 12 14.01 9 11.01" />
+              </svg>
+            </div>
+            <div class="h-stat-text"><strong>15+</strong><span>Awards & Recognitions</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right-content reveal delay-1">
+        <div class="top-rated-float glass-card">
+          <div class="trf-icon">🏅</div>
+          <div class="trf-text">
+            <strong>Top Rated</strong>
+            <span>SCHOOL IN REGION</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BOTTOM FEATURE CARDS ============ -->
+  <section class="bottom-features">
+    <div class="container">
+      <div class="bf-grid">
+        <div class="bf-card reveal" data-delay="0">
+          <div class="bf-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <polygon points="12 2 2 7 12 12 22 7 12 2" />
+              <polyline points="2 17 12 22 22 17" />
+              <polyline points="2 12 12 17 22 12" />
+            </svg></div>
+          <div class="bf-info">
+            <h4>Holistic Education</h4>
+            <p>Balanced growth for mind, body & soul</p>
+          </div>
+        </div>
+        <div class="bf-card reveal" data-delay="100">
+          <div class="bf-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+              <circle cx="12" cy="7" r="4" />
+              <path d="M16 11h6" />
+              <path d="M19 8v6" />
+            </svg></div>
+          <div class="bf-info">
+            <h4>Experienced Faculty</h4>
+            <p>Guiding students with expertise</p>
+          </div>
+        </div>
+        <div class="bf-card reveal" data-delay="200">
+          <div class="bf-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+              <polyline points="9 22 9 12 15 12 15 22" />
+            </svg></div>
+          <div class="bf-info">
+            <h4>Modern Campus</h4>
+            <p>State-of-the-art facilities for excellence</p>
+          </div>
+        </div>
+        <div class="bf-card reveal" data-delay="300">
+          <div class="bf-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path
+                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+            </svg></div>
+          <div class="bf-info">
+            <h4>Value Based Learning</h4>
+            <p>Building character for a better tomorrow</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT US ============ -->
+  <section id="about" class="section-pad">
+    <div class="container">
+      <div class="composition-grid">
+        <div class="comp-visual reveal">
+          <div class="comp-img-main">
+            <img src="newton7.webp" alt="Students learning" loading="lazy" />
+          </div>
+          <div class="comp-img-sec">
+            <img src="newton5.webp" alt="Students playing" loading="lazy" />
+          </div>
+          <div class="comp-badge glass-card">
+            <h3>20+</h3>
+            <p>Years of<br>Excellence</p>
+          </div>
+        </div>
+        <div class="comp-text reveal delay-1">
+          <p class="section-tag">WHO WE ARE</p>
+          <h2 class="section-heading">A School Built on <em>Values & Vision</em></h2>
+          <p class="section-desc">
+            Newtons public School is committed to delivering high-quality education through a balanced
+            combination of academics, values, technology, creativity, and practical learning. Our teaching methods
+            encourage students to explore new ideas and develop essential life skills.
+          </p>
+          <div class="icon-list">
+            <div class="il-item">
+              <div class="il-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8" />
+                  <path d="M21 21l-4.35-4.35" />
+                </svg></div>
+              <div>
+                <h4>Our Vision</h4>
+                <p>To develop knowledgeable, innovative, and compassionate global citizens.</p>
+              </div>
+            </div>
+            <div class="il-item">
+              <div class="il-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                  <path d="M22 4L12 14.01l-3-3" />
+                </svg></div>
+              <div>
+                <h4>Our Mission</h4>
+                <p>To provide a supportive learning environment promoting academic excellence.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRINCIPAL ============ -->
+  <section id="principal" class="section-pad bg-cream">
+    <div class="container">
+      <div class="composition-grid reversed">
+        <div class="comp-text reveal">
+          <p class="section-tag">LEADERSHIP</p>
+          <h2 class="section-heading">Principal's <em>Message</em></h2>
+          <div class="quote-box">
+            <svg class="quote-mark" viewBox="0 0 24 24">
+              <path
+                d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"
+                fill="#D4AF37" opacity="0.2" />
+            </svg>
+            <p>
+              At Newtons International School, we believe that education is a journey that helps students understand
+              themselves, discover their abilities, and prepare for the future. We encourage every student to explore
+              and grow with confidence.
+            </p>
+          </div>
+          <div class="principal-sig">
+            <strong>The Principal</strong>
+            <span>Newtons public School</span>
+          </div>
+        </div>
+        <div class="comp-visual reveal delay-1">
+          <div class="comp-img-main portrait">
+            <img src="newton6.webp" alt="Principal" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ACADEMICS ============ -->
+  <section id="academics" class="section-pad">
+    <div class="container">
+      <div class="section-header center reveal">
+        <p class="section-tag">LEARNING EXCELLENCE</p>
+        <h2 class="section-heading">Our <em>Academic Programme</em></h2>
+      </div>
+      <div class="academic-grid">
+        <div class="aca-card glass-card reveal" data-delay="0">
+          <div class="aca-num">01</div>
+          <h3>Languages</h3>
+          <p>Strong communication skills in reading, writing, and expression across multiple languages.</p>
+        </div>
+        <div class="aca-card glass-card reveal" data-delay="100">
+          <div class="aca-num">02</div>
+          <h3>Mathematics</h3>
+          <p>Logical thinking, problem-solving, and numerical confidence through structured learning.</p>
+        </div>
+        <div class="aca-card glass-card reveal" data-delay="200">
+          <div class="aca-num">03</div>
+          <h3>Science</h3>
+          <p>Hands-on experiments and practical demonstrations to spark scientific curiosity.</p>
+        </div>
+        <div class="aca-card glass-card reveal" data-delay="300">
+          <div class="aca-num">04</div>
+          <h3>Social Studies</h3>
+          <p>Understanding history, geography, and civics to become informed global citizens.</p>
+        </div>
+        <div class="aca-card glass-card reveal" data-delay="400">
+          <div class="aca-num">05</div>
+          <h3>Technology</h3>
+          <p>Digital literacy and modern tools that prepare students for a tech-driven world.</p>
+        </div>
+        <div class="aca-card glass-card reveal" data-delay="500">
+          <div class="aca-num">06</div>
+          <h3>Creative Arts</h3>
+          <p>Music, art, drama, and craft nurturing creativity, expression, and aesthetic appreciation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CAMPUS LIFE ============ -->
+  <section id="campus" class="section-pad bg-cream">
+    <div class="container">
+      <div class="campus-layout">
+        <div class="campus-text reveal">
+          <p class="section-tag">CAMPUS LIFE</p>
+          <h2 class="section-heading">World-Class <em>Facilities</em></h2>
+          <p class="section-desc">Modern infrastructure designed to support holistic development in a safe, vibrant, and
+            green environment.</p>
+          <ul class="campus-features">
+            <li class="reveal" data-delay="0">
+              <div class="cf-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                  <polyline points="9 22 9 12 15 12 15 22" />
+                </svg></div>
+              <div><strong>Spacious Classrooms</strong>
+                <p>Air-ventilated, well-lit learning spaces with modern furniture designed for comfort and focus.</p>
+              </div>
+            </li>
+            <li class="reveal" data-delay="100">
+              <div class="cf-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                  <line x1="8" y1="21" x2="16" y2="21" />
+                  <line x1="12" y1="17" x2="12" y2="21" />
+                </svg></div>
+              <div><strong>Digital Lab</strong>
+                <p>Fully equipped computer laboratory with high-speed internet for modern digital learning.</p>
+              </div>
+            </li>
+            <li class="reveal" data-delay="200">
+              <div class="cf-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+                </svg></div>
+              <div><strong>Library & Resource Centre</strong>
+                <p>A rich collection of books, journals, and digital resources to nurture a love of reading.</p>
+              </div>
+            </li>
+            <li class="reveal" data-delay="300">
+              <div class="cf-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <circle cx="12" cy="12" r="10" />
+                  <polygon points="10 8 16 12 10 16 10 8" />
+                </svg></div>
+              <div><strong>Activity & Sports Area</strong>
+                <p>Open courts and activity areas encouraging physical fitness, teamwork and healthy play.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="campus-mosaic reveal delay-1">
+          <div class="cm-img cm-img-1"><img src="newton1.webp" alt="Campus" loading="lazy" /></div>
+          <div class="cm-img cm-img-2"><img src="newton2.webp" alt="Students" loading="lazy" /></div>
+          <div class="cm-img cm-img-3"><img src="newton3.webp" alt="Classroom" loading="lazy" /></div>
+          <div class="cm-img cm-img-4"><img src="newton4.webp" alt="Sports" loading="lazy" /></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STATS COUNTER ============ -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item reveal" data-delay="0">
+          <h3 class="stat-num"><span class="hs-num" data-target="500">0</span>+</h3>
+          <p>Students Enrolled</p>
+        </div>
+        <div class="stat-item reveal" data-delay="100">
+          <h3 class="stat-num"><span class="hs-num" data-target="30">0</span>+</h3>
+          <p>Qualified Teachers</p>
+        </div>
+        <div class="stat-item reveal" data-delay="200">
+          <h3 class="stat-num"><span class="hs-num" data-target="20">0</span>+</h3>
+          <p>Years of Excellence</p>
+        </div>
+        <div class="stat-item reveal" data-delay="300">
+          <h3 class="stat-num"><span class="hs-num" data-target="95">0</span>%</h3>
+          <p>Parent Satisfaction</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section id="gallery" class="section-pad">
+    <div class="container">
+      <div class="section-header center reveal">
+        <p class="section-tag">OUR MOMENTS</p>
+        <h2 class="section-heading">Life at <em>Newtons</em></h2>
+        <p class="section-desc center" style="max-width:550px; margin: 0 auto 4rem;">
+          A glimpse into the vibrant, joyful world of our students — inside and outside the classroom.
+        </p>
+      </div>
+      <div class="gallery-mosaic">
+        <div class="gm-item gm-tall reveal" data-delay="0"><img src="newton5.webp" alt="Event" loading="lazy" />
+          <div class="gm-overlay"><span>School Events</span></div>
+        </div>
+        <div class="gm-item reveal" data-delay="100"><img src="newton7.webp" alt="Students" loading="lazy" />
+          <div class="gm-overlay"><span>Learning Together</span></div>
+        </div>
+        <div class="gm-item reveal" data-delay="200"><img src="newton9.webp" alt="Achievement" loading="lazy" />
+          <div class="gm-overlay"><span>Achievements</span></div>
+        </div>
+        <div class="gm-item reveal" data-delay="300"><img src="newton10.webp" alt="Campus" loading="lazy" />
+          <div class="gm-overlay"><span>Campus Life</span></div>
+        </div>
+        <div class="gm-item reveal" data-delay="400"><img src="newton8.webp" alt="Activity" loading="lazy" />
+          <div class="gm-overlay"><span>Activities</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ADMISSIONS ============ -->
+  <section id="admissions" class="section-pad bg-cream">
+    <div class="container">
+      <div class="adm-layout">
+        <div class="adm-text reveal">
+          <p class="section-tag">ENROL YOUR CHILD</p>
+          <h2 class="section-heading">Begin the <em>Journey</em></h2>
+          <p class="section-desc">We welcome students who are curious, eager to learn, and ready to grow. Admissions are
+            open for all classes. Reach out to us and we'll guide you every step of the way.</p>
+          <div class="adm-steps">
+            <div class="adm-step">
+              <div class="step-num">1</div>
+              <div><strong>Inquiry & Visit</strong>
+                <p>Contact us or visit the campus to learn about the school environment.</p>
+              </div>
+            </div>
+            <div class="adm-step">
+              <div class="step-num">2</div>
+              <div><strong>Application Form</strong>
+                <p>Complete the registration form with required documents.</p>
+              </div>
+            </div>
+            <div class="adm-step">
+              <div class="step-num">3</div>
+              <div><strong>Interaction & Admission</strong>
+                <p>A friendly interaction to understand the student's needs and confirm enrolment.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact form card -->
+        <div class="adm-card glass-card reveal delay-1" id="contact">
+          <h3 class="adm-form-title">Get In Touch</h3>
+          <p class="adm-form-sub">Fill in your details and our team will contact you shortly.</p>
+          <form id="admForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Parent Name</label>
+                <input type="text" placeholder="Your full name" required />
+              </div>
+              <div class="form-group">
+                <label>Child's Name</label>
+                <input type="text" placeholder="Child's full name" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Phone Number</label>
+                <input type="tel" placeholder="Mobile number" required />
+              </div>
+              <div class="form-group">
+                <label>Class Seeking</label>
+                <select required>
+                  <option value="" disabled selected>Select class</option>
+                  <option>LKG</option>
+                  <option>UKG</option>
+                  <option>Grade 1</option>
+                  <option>Grade 2</option>
+                  <option>Grade 3</option>
+                  <option>Grade 4</option>
+                  <option>Grade 5</option>
+                  <option>Grade 6</option>
+                  <option>Grade 7</option>
+                  <option>Grade 8</option>
+                  <option>Grade 9</option>
+                  <option>Grade 10</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Message (optional)</label>
+              <textarea placeholder="Any specific questions or requirements?" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn-primary btn-full" id="admSubmit">Send Enquiry</button>
+          </form>
+          <div id="admSuccess" class="adm-success" style="display:none;">
+            <div class="success-icon">✅</div>
+            <h4>Thank You!</h4>
+            <p>We have received your enquiry. Our team will reach out to you within 24 hours.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER (LUXURY) ============ -->
+
+  <footer class="footer-luxury" id="contact">
+    <!-- Top Organic Wave (Green) -->
+    <div class="fl-wave">
+      <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+        <path d="M0,0 C320,80 420,20 720,40 C1020,60 1200,10 1440,30 L1440,100 L0,100 Z" fill="#18331F" />
+        <!-- Gold Stroke Line -->
+        <path d="M0,0 C320,80 420,20 720,40 C1020,60 1200,10 1440,30" fill="none" stroke="#D4AF37" stroke-width="2"
+          opacity="0.6" />
+      </svg>
+    </div>
+
+    <div class="fl-bg-wrap">
+      <!-- Decor Leaves Corners -->
+      <svg class="fl-leaf-tl" viewBox="0 0 100 100">
+        <path d="M0,0 Q50,0 100,50 Q50,100 0,100 Z" fill="rgba(255,255,255,0.03)" />
+      </svg>
+      <svg class="fl-leaf-tr" viewBox="0 0 100 100">
+        <path d="M100,0 Q50,0 0,50 Q50,100 100,100 Z" fill="rgba(255,255,255,0.03)" />
+      </svg>
+      <svg class="fl-leaf-bl" viewBox="0 0 100 100">
+        <path d="M0,100 Q50,100 100,50 Q50,0 0,0 Z" fill="rgba(255,255,255,0.03)" />
+      </svg>
+      <svg class="fl-leaf-br" viewBox="0 0 100 100">
+        <path d="M100,100 Q50,100 0,50 Q50,0 100,0 Z" fill="rgba(255,255,255,0.03)" />
+      </svg>
+
+      <div class="container fl-container">
+
+        <!-- 4 Column Grid -->
+        <div class="fl-grid">
+
+          <!-- Col 1: Brand -->
+          <div class="fl-col">
+            <div class="fl-brand-header">
+              <div class="fl-logo-circle">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.5">
+                  <path d="M12 22C12 22 4 16 4 9C4 5 7.5 2 12 2C16.5 2 20 5 20 9C20 16 12 22 12 22Z"
+                    fill="rgba(212,175,55,0.1)" />
+                  <path d="M12 22V10" />
+                </svg>
+              </div>
+              <div class="fl-brand-text">
+                <span class="fl-title">NEWTONS</span>
+                <span class="fl-sub">PUBLIC SCHOOL</span>
+              </div>
+            </div>
+            <p class="fl-tagline">Where education inspires curiosity, confidence, and lifelong learning.</p>
+
+            <ul class="fl-info">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.5">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 6v6l4 2" />
+                </svg>
+                <span>Mon – Sat : 8:30 AM to 4:00 PM</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.5">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                  <line x1="16" y1="2" x2="16" y2="6" />
+                  <line x1="8" y1="2" x2="8" y2="6" />
+                  <line x1="3" y1="10" x2="21" y2="10" />
+                </svg>
+                <span>Excellence in Education Since 2004</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.5">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                </svg>
+                <span>Nurturing Minds. Building Futures.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Col 2: Quick Links -->
+          <div class="fl-col">
+            <h4 class="fl-col-title">QUICK LINKS</h4>
+            <div class="fl-title-divider"></div>
+            <ul class="fl-links">
+              <li><svg viewBox="0 0 24 24" fill="rgba(212,175,55,0.8)">
+                  <path d="M12 22C12 22 4 16 4 9C4 5 7.5 2 12 2C16.5 2 20 5 20 9C20 16 12 22 12 22Z" />
+                </svg> <a href="#home">Home</a></li>
+              <li><svg viewBox="0 0 24 24" fill="rgba(212,175,55,0.8)">
+                  <path d="M12 22C12 22 4 16 4 9C4 5 7.5 2 12 2C16.5 2 20 5 20 9C20 16 12 22 12 22Z" />
+                </svg> <a href="#about">About Us</a></li>
+              <li><svg viewBox="0 0 24 24" fill="rgba(212,175,55,0.8)">
+                  <path d="M12 22C12 22 4 16 4 9C4 5 7.5 2 12 2C16.5 2 20 5 20 9C20 16 12 22 12 22Z" />
+                </svg> <a href="#academics">Academics</a></li>
+              <li><svg viewBox="0 0 24 24" fill="rgba(212,175,55,0.8)">
+                  <path d="M12 22C12 22 4 16 4 9C4 5 7.5 2 12 2C16.5 2 20 5 20 9C20 16 12 22 12 22Z" />
+                </svg> <a href="#campus">Campus Life</a></li>
+              <li><svg viewBox="0 0 24 24" fill="rgba(212,175,55,0.8)">
+                  <path d="M12 22C12 22 4 16 4 9C4 5 7.5 2 12 2C16.5 2 20 5 20 9C20 16 12 22 12 22Z" />
+                </svg> <a href="#gallery">Gallery</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3: School -->
+          <div class="fl-col">
+            <h4 class="fl-col-title">SCHOOL</h4>
+            <div class="fl-title-divider"></div>
+            <ul class="fl-links">
+              <li><svg viewBox="0 0 24 24" fill="rgba(212,175,55,0.8)">
+                  <path d="M12 22C12 22 4 16 4 9C4 5 7.5 2 12 2C16.5 2 20 5 20 9C20 16 12 22 12 22Z" />
+                </svg> <a href="#achievements">Achievements</a></li>
+              <li><svg viewBox="0 0 24 24" fill="rgba(212,175,55,0.8)">
+                  <path d="M12 22C12 22 4 16 4 9C4 5 7.5 2 12 2C16.5 2 20 5 20 9C20 16 12 22 12 22Z" />
+                </svg> <a href="#admissions">Admissions</a></li>
+              <li><svg viewBox="0 0 24 24" fill="rgba(212,175,55,0.8)">
+                  <path d="M12 22C12 22 4 16 4 9C4 5 7.5 2 12 2C16.5 2 20 5 20 9C20 16 12 22 12 22Z" />
+                </svg> <a href="#curriculum">Curriculum</a></li>
+              <li><svg viewBox="0 0 24 24" fill="rgba(212,175,55,0.8)">
+                  <path d="M12 22C12 22 4 16 4 9C4 5 7.5 2 12 2C16.5 2 20 5 20 9C20 16 12 22 12 22Z" />
+                </svg> <a href="#events">Events</a></li>
+              <li><svg viewBox="0 0 24 24" fill="rgba(212,175,55,0.8)">
+                  <path d="M12 22C12 22 4 16 4 9C4 5 7.5 2 12 2C16.5 2 20 5 20 9C20 16 12 22 12 22Z" />
+                </svg> <a href="#contact">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 4: Contact & Newsletter -->
+          <div class="fl-col">
+            <h4 class="fl-col-title">CONTACT US</h4>
+            <div class="fl-title-divider"></div>
+            <ul class="fl-info mb-2">
+              <li class="align-start">
+                <div class="fl-icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="1.5">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg></div>
+                <span>1st Cross, Mangammanapalya, Bommanahalli, Bengaluru 560068</span>
+              </li>
+              <li>
+                <div class="fl-icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="1.5">
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                  </svg></div>
+                <span>089046 22559</span>
+              </li>
+              <li>
+                <div class="fl-icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="1.5">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                    <polyline points="22,6 12,13 2,6" />
+                  </svg></div>
+                <span>info@newtons.edu.in</span>
+              </li>
+            </ul>
+
+            <h4 class="fl-col-title mt-2">STAY UPDATED</h4>
+            <div class="fl-title-divider"></div>
+            <p class="fl-news-desc">Subscribe to our newsletter for the latest updates.</p>
+            <form class="fl-news-form glass-panel">
+              <div class="fl-input-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+                <input type="email" placeholder="Enter your email address" required />
+              </div>
+              <button type="submit" class="fl-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+                SUBSCRIBE
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Social Divider Section -->
+        <div class="fl-social-sec">
+          <div class="fl-crest">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.5">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" fill="rgba(212,175,55,0.1)" />
+              <path d="M12 8v8" />
+              <path d="M9 10h6" />
+            </svg>
+          </div>
+
+          <div class="fl-social-icons">
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.5">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3.81l.53-4H14V7a1 1 0 0 1 1-1h3z" />
+              </svg></a>
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.5">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg></a>
+            <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.5">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" />
+              </svg></a>
+            <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.5">
+                <path
+                  d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33 2.78 2.78 0 0 0 1.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z" />
+                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />
+              </svg></a>
+          </div>
+          <p class="fl-social-text"><svg viewBox="0 0 24 24" width="16" height="16" fill="#D4AF37">
+              <path d="M12 22C12 22 4 16 4 9C4 5 7.5 2 12 2C16.5 2 20 5 20 9C20 16 12 22 12 22Z" />
+            </svg> Follow us on social media <svg viewBox="0 0 24 24" width="16" height="16" fill="#D4AF37">
+              <path d="M12 22C12 22 4 16 4 9C4 5 7.5 2 12 2C16.5 2 20 5 20 9C20 16 12 22 12 22Z" />
+            </svg></p>
+        </div>
+
+      </div>
+
+      <!-- BTT -->
+      <button class="fl-btt" id="btt" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M18 15l-6-6-6 6" />
+        </svg>
+      </button>
+
+      <!-- Bottom Bar -->
+      <div class="fl-bottom">
+        <div class="container fl-bottom-inner">
+          <p>© <span id="year"></span> Newtons Public School. All Rights Reserved.</p>
+          <div class="fl-bottom-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Sitemap</a>
+          </div>
+          <p class="fl-love">Designed with <svg width="14" height="14" viewBox="0 0 24 24" fill="#8cb34d">
+              <path
+                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+            </svg> in India</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
